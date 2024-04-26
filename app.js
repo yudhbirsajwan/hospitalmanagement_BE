@@ -36,7 +36,9 @@ app.set('view engine', 'jade');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors());
+app.use(cors({
+  origin: 'http://web-aviral.s3-website.us-east-2.amazonaws.com'
+}));
 
 //Signup, Login, Password Reset Related Queries
 
