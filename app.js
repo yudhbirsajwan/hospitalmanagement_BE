@@ -9,7 +9,7 @@ var port = 3000
 
 //Connection Info
 var con = mysql.createConnection({
-  host: 'localhost',
+  host: 'hospitalmanagement.c1sqsq6u20im.us-east-2.rds.amazonaws.com',
   user: 'root',
   password: 'mko_09ijn',
   database: 'DB',
